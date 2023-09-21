@@ -31,9 +31,6 @@ public class TestAnimal {
         System.out.println("Actual Result: " + actualFood + " для " + animalKind);
         System.out.println("Expected Result: " + expectedFood + " для " + animalKind);
     }
-
-
-
     @Test
     public void testAnimalFamily() {
         Animal newAnimal = new Animal();

@@ -4,11 +4,13 @@ import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
+
 import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
 public class TestFeline {
+    private Feline feline = new Feline();
     @Test
     public void testFelineFood() throws Exception {
         Feline newFeline = new Feline();
@@ -18,7 +20,6 @@ public class TestFeline {
         System.out.println("Actual Result: " + actualFood);
         System.out.println("Expected Result: " + expectedFood);
     }
-
     @Test
     public void testFelineFamily() {
         Feline newFeline = new Feline();
@@ -28,10 +29,6 @@ public class TestFeline {
         System.out.println("Actual Result: " + actualFamily);
         System.out.println("Expected Result: " + expectedFamily);
     }
-
-    @Spy
-    private Feline feline = new Feline();
-
     @Test
     public void testFelineKittens() {
         int actual = feline.getKittens();
@@ -46,11 +43,12 @@ public class TestFeline {
         System.out.println("Actual Result: " + actualKittensCount);
         System.out.println("Expected Result: " + expectedKittensCount);
     }
-
+    @Spy
+    private Feline felineMock = new Feline();
     @Test
     public void getFelineKittensInvokeTimes() {
-        feline.getKittens();
-        Mockito.verify(feline, Mockito.times(1)).getKittens();
+       felineMock.getKittens();
+       Mockito.verify(felineMock, Mockito.times(1)).getKittens();
     }
 
 }

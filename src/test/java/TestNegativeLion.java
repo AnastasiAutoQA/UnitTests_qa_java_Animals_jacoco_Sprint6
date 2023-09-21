@@ -1,19 +1,22 @@
 import com.example.Lion;
 import org.junit.Assert;
 import org.junit.Test;
+import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.fail;
 
 public class TestNegativeLion {
     private boolean expected;
-
-    public TestNegativeLion() {
-    }
 
     @Test(expected = Exception.class)
     public void testInvalidLionSex() throws Exception {
         Lion newLion = new Lion("ГендерноНеопределившийся");
         boolean actual = newLion.doesHaveMane();
         Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testLionSexException(){
+        assertThrows(Exception.class, () -> new Lion("Квир"));
     }
 
     @Test

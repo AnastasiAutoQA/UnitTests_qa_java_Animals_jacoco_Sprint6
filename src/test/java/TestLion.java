@@ -1,4 +1,4 @@
-import com.example.InterfaceFeline;
+import com.example.Feline;
 import com.example.Lion;
 import org.junit.Assert;
 import org.junit.Before;
@@ -48,7 +48,7 @@ public class TestLion {
    }
 
     @Mock
-    InterfaceFeline mockedLion;
+    Feline mockedLion;
 
     @Test
     public void testLionKittens() throws Exception {

@@ -1,12 +1,12 @@
 package com.example;
-
 import java.util.List;
 
 public class Lion {
-    private InterfaceFeline feline;
+    Feline feline;
+    String sex;
     boolean hasMane;
 
-    public Lion(InterfaceFeline feline){
+    public Lion(Feline feline){
         this.feline = feline;
     }
 
