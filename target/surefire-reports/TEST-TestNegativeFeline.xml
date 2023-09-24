@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="TestNegativeFeline" time="0.004" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="TestNegativeFeline" time="0" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2023.1.2"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.19+7-LTS"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.19_7\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Projects_AUTO_QA\qa_java"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Lenovo\Desktop\qa_java_Sprint6_Новый"/>
     <property name="java.vm.vendor" value="Amazon.com Inc."/>
     <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Projects_AUTO_QA\qa_java"/>
+    <property name="user.dir" value="C:\Users\Lenovo\Desktop\qa_java_Sprint6_Новый"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="11.0.19+7-LTS"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -65,8 +65,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="TestNegativeFeline" name="testFelineKittensCount" time="0.001"/>
-  <testcase classname="TestNegativeFeline" name="testFelineFamily" time="0.001"/>
-  <testcase classname="TestNegativeFeline" name="testFelineFood" time="0.001"/>
-  <testcase classname="TestNegativeFeline" name="testFelineKittens" time="0.001"/>
+  <testcase classname="TestNegativeFeline" name="testFelineKittensCount" time="0"/>
+  <testcase classname="TestNegativeFeline" name="testFelineFamily" time="0"/>
+  <testcase classname="TestNegativeFeline" name="testFelineFood" time="0"/>
+  <testcase classname="TestNegativeFeline" name="testFelineKittens" time="0"/>
 </testsuite>

@@ -2,20 +2,18 @@ import com.example.Animal;
 import org.junit.Assert;
 import org.junit.Test;
 import java.util.List;
+
+import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.fail;
 
 public class TestNegativeAnimal {
-    private List<String> expectedFood;
 
-    public TestNegativeAnimal() {
-
-    }
-
-    @Test(expected = Exception.class)
-    public void testUnknownAnimal() throws Exception {
+    @Test
+    public void testAnimalTypeException(){
         Animal newAnimal = new Animal();
-        List<String> actualFood = newAnimal.getFood("ЧертЗнаетКто");
-        Assert.assertEquals(expectedFood, actualFood);
+        Exception exception = assertThrows(Exception.class, () -> newAnimal.getFood("КоньВПальто"));
+        String message = exception.getMessage();
+        System.out.println(message);
     }
 
     @Test
