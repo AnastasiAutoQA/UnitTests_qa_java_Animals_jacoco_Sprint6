@@ -6,7 +6,8 @@ public class Lion {
     String sex;
     boolean hasMane;
 
-    public Lion(Feline feline){
+    public Lion(String sex, Feline feline){
+        this.sex = sex;
         this.feline = feline;
     }
 
